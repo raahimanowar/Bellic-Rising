@@ -9,9 +9,9 @@ if (typeof window !== 'undefined') {
 export const animateHero = (title: HTMLElement, tagline: HTMLElement, button: HTMLElement) => {
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-    tl.fromTo(title, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 1 })
-        .fromTo(tagline, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 1 }, '-=0.7')
-        .fromTo(button, { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 1 }, '-=0.4');
+    tl.fromTo(title, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6 })
+        .fromTo(tagline, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6 }, '-=0.4')
+        .fromTo(button, { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.6 }, '-=0.3');
 
     return tl;
 };
@@ -24,7 +24,7 @@ export const animateFadeIn = (element: HTMLElement, delay: number = 0, x: number
             opacity: 1,
             x: 0,
             y: 0,
-            duration: 1,
+            duration: 0.6,
             delay,
             ease: 'power3.out',
             scrollTrigger: {
@@ -42,8 +42,8 @@ export const animateStaggerFadeIn = (elements: HTMLElement[], delay: number = 0,
         {
             opacity: 1,
             y: 0,
-            duration: 1,
-            stagger: 0.2,
+            duration: 0.6,
+            stagger: 0.15,
             delay,
             ease: 'power3.out',
             scrollTrigger: {
@@ -61,7 +61,7 @@ export const animateScaleIn = (element: HTMLElement, delay: number = 0) => {
         {
             opacity: 1,
             scale: 1,
-            duration: 1,
+            duration: 0.6,
             delay,
             ease: 'power3.out',
             scrollTrigger: {

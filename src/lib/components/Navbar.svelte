@@ -49,8 +49,8 @@
 			gsap.from(navContainer, {
 				y: -100,
 				opacity: 0,
-				duration: 1,
-				delay: 1,
+				duration: 0.6,
+				delay: 0.3,
 				ease: 'power3.out'
 			});
 

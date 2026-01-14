@@ -14,7 +14,9 @@
 <section class="flex justify-center bg-[#0a0a0a] px-8 py-40" id="join">
 	<div class="w-full max-w-[800px]">
 		<div class="border border-[#222] bg-[#111] px-8 py-20 text-center md:px-16" bind:this={cardRef}>
-			<h2 class="font-['Inter'] text-[2.5rem] font-black tracking-[0.1em] text-white uppercase">
+			<h2
+				class="font-['Inter'] text-[clamp(1.75rem,5vw,2.5rem)] font-black tracking-[0.05em] text-white uppercase md:tracking-[0.1em]"
+			>
 				RECRUITMENT
 			</h2>
 			<div
