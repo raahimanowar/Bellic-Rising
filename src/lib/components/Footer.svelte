@@ -16,13 +16,13 @@
 			<h2 class="font-['Inter'] font-black text-lg tracking-[0.2em] text-white m-0">BELLIC RISING</h2>
 			
 			<div class="flex items-center gap-5">
-				<a href="#" class="text-[#444] transition-all duration-300 hover:text-[#00ffff] hover:[filter:drop-shadow(0_0_8px_rgba(0,255,255,0.5))]" aria-label="X (Twitter)">
+				<a href="https://x.com/" class="text-[#444] transition-all duration-300 hover:text-[#00ffff] hover:[filter:drop-shadow(0_0_8px_rgba(0,255,255,0.5))]" aria-label="X (Twitter)">
 					<Twitter size={18} />
 				</a>
-				<a href="#" class="text-[#444] transition-all duration-300 hover:text-[#00ffff] hover:[filter:drop-shadow(0_0_8px_rgba(0,255,255,0.5))]" aria-label="Instagram">
+				<a href="https://instagram.com/" class="text-[#444] transition-all duration-300 hover:text-[#00ffff] hover:[filter:drop-shadow(0_0_8px_rgba(0,255,255,0.5))]" aria-label="Instagram">
 					<Instagram size={18} />
 				</a>
-				<a href="#" class="text-[#444] transition-all duration-300 hover:text-[#00ffff] hover:[filter:drop-shadow(0_0_8px_rgba(0,255,255,0.5))]" aria-label="Facebook">
+				<a href="https://facebook.com/" class="text-[#444] transition-all duration-300 hover:text-[#00ffff] hover:[filter:drop-shadow(0_0_8px_rgba(0,255,255,0.5))]" aria-label="Facebook">
 					<Facebook size={18} />
 				</a>
 			</div>

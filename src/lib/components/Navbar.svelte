@@ -68,16 +68,16 @@
 	<div 
 		class="fixed inset-0 bg-[rgba(10,10,10,0.98)] backdrop-blur-xl z-[1100] p-8 flex flex-col items-center justify-center gap-8 md:hidden"
 		transition:fade={{ duration: 300 }}
-		on:click={closeMenu}
-		on:keydown={(e) => e.key === 'Escape' && closeMenu()}
+		onclick={closeMenu}
+		onkeydown={(e) => e.key === 'Escape' && closeMenu()}
 		role="button"
 		tabindex="0"
 	>
-		<a href="#about" on:click={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">ABOUT</a>
-		<a href="#policies" on:click={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">POLICIES</a>
-		<a href="#media" on:click={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">MEDIA</a>
-		<a href="#map" on:click={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">MAP</a>
-		<a href="#footer" on:click={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">CONTACT</a>
+		<a href="#about" onclick={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">ABOUT</a>
+		<a href="#policies" onclick={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">POLICIES</a>
+		<a href="#media" onclick={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">MEDIA</a>
+		<a href="#map" onclick={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">MAP</a>
+		<a href="#footer" onclick={closeMenu} class="font-['Inter'] font-black text-3xl text-white no-underline tracking-[0.2em] transition-all duration-300 hover:text-[#00ffff] hover:[text-shadow:0_0_20px_rgba(0,255,255,0.6)]">CONTACT</a>
 	</div>
 {/if}
 
@@ -100,7 +100,7 @@
 
 		<button 
 			class="md:hidden flex flex-col gap-1.5 p-2 -mr-2 bg-transparent border-0 cursor-pointer relative z-[1200]" 
-			on:click={toggleMenu}
+			onclick={toggleMenu}
 			aria-label="Toggle Menu"
 		>
 			<span class="block w-6 h-0.5 bg-[#00ffff] [box-shadow:0_0_8px_rgba(0,255,255,0.6)] transition-all duration-300 {isMenuOpen ? 'rotate-45 translate-y-2' : ''}"></span>

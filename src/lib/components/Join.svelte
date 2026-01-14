@@ -11,31 +11,44 @@
 	});
 </script>
 
-<section class="py-40 px-8 bg-[#0a0a0a] flex justify-center" id="join">
-	<div class="max-w-[800px] w-full">
-		<div class="bg-[#111] py-20 px-8 md:px-16 border border-[#222] text-center" bind:this={cardRef}>
-			<h2 class="font-['Inter'] font-black text-[2.5rem] uppercase text-white tracking-[0.1em]">RECRUITMENT</h2>
-			<div class="w-[50px] h-[2px] bg-[#00ffff] my-6 mx-auto mb-12 [box-shadow:0_0_10px_#00ffff]"></div>
-			<p class="font-['Inter'] text-[#888] mb-16 leading-relaxed text-[1.1rem]">
-				The Rising Order is looking for individuals with ambition and discipline. Submit your declaration of loyalty to the faction.
+<section class="flex justify-center bg-[#0a0a0a] px-8 py-40" id="join">
+	<div class="w-full max-w-[800px]">
+		<div class="border border-[#222] bg-[#111] px-8 py-20 text-center md:px-16" bind:this={cardRef}>
+			<h2 class="font-['Inter'] text-[2.5rem] font-black tracking-[0.1em] text-white uppercase">
+				RECRUITMENT
+			</h2>
+			<div
+				class="mx-auto my-6 mb-12 h-[2px] w-[50px] bg-[#00ffff] [box-shadow:0_0_10px_#00ffff]"
+			></div>
+			<p class="mb-16 font-['Inter'] text-[1.1rem] leading-relaxed text-[#888]">
+				The Rising Order is looking for individuals with ambition and discipline. Submit your
+				declaration of loyalty to the faction.
 			</p>
 
-			<form class="text-left" on:submit|preventDefault>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+			<form class="text-left" onsubmit={(e) => e.preventDefault()}>
+				<div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
 					<div class="flex flex-col gap-3">
-						<label for="name" class="font-['Inter'] font-bold text-[0.8rem] uppercase text-[#555] tracking-[0.1em]">Name</label>
-						<input 
-							type="text" 
-							id="name" 
-							placeholder="Roman" 
-							class="bg-[#1a1a1a] border border-[#333] p-4 text-white font-['Inter'] outline-none transition-all duration-300 focus:border-[#00ffff] focus:[box-shadow:0_0_15px_rgba(0,255,255,0.1)]" 
+						<label
+							for="name"
+							class="font-['Inter'] text-[0.8rem] font-bold tracking-[0.1em] text-[#555] uppercase"
+							>Name</label
+						>
+						<input
+							type="text"
+							id="name"
+							placeholder="Roman"
+							class="border border-[#333] bg-[#1a1a1a] p-4 font-['Inter'] text-white transition-all duration-300 outline-none focus:border-[#00ffff] focus:[box-shadow:0_0_15px_rgba(0,255,255,0.1)]"
 						/>
 					</div>
 					<div class="flex flex-col gap-3">
-						<label for="district" class="font-['Inter'] font-bold text-[0.8rem] uppercase text-[#555] tracking-[0.1em]">Current Residence</label>
-						<select 
-							id="district" 
-							class="bg-[#1a1a1a] border border-[#333] p-4 text-white font-['Inter'] outline-none transition-all duration-300 focus:border-[#00ffff] focus:[box-shadow:0_0_15px_rgba(0,255,255,0.1)]"
+						<label
+							for="district"
+							class="font-['Inter'] text-[0.8rem] font-bold tracking-[0.1em] text-[#555] uppercase"
+							>Current Residence</label
+						>
+						<select
+							id="district"
+							class="border border-[#333] bg-[#1a1a1a] p-4 font-['Inter'] text-white transition-all duration-300 outline-none focus:border-[#00ffff] focus:[box-shadow:0_0_15px_rgba(0,255,255,0.1)]"
 						>
 							{#each districts as district}
 								<option>{district}</option>
@@ -44,9 +57,9 @@
 					</div>
 				</div>
 
-				<button 
-					type="submit" 
-					class="w-full bg-[#111] text-white border border-[#444] p-5 font-['Inter'] font-extrabold uppercase tracking-[0.2em] cursor-pointer transition-all duration-400 hover:bg-black hover:border-[#00ffff] hover:text-[#00ffff] hover:[box-shadow:0_0_25px_rgba(0,255,255,0.3)]" 
+				<button
+					type="submit"
+					class="w-full cursor-pointer border border-[#444] bg-[#111] p-5 font-['Inter'] font-extrabold tracking-[0.2em] text-white uppercase transition-all duration-400 hover:border-[#00ffff] hover:bg-black hover:text-[#00ffff] hover:[box-shadow:0_0_25px_rgba(0,255,255,0.3)]"
 					bind:this={btnRef}
 				>
 					Enlist in the Rising Order
